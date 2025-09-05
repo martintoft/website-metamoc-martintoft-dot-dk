@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>The METAMOC Method</title><style type="text/css">
+body { }
+h1 {
+  font-size: xx-large;
+  font-weight: bold;
+  border-bottom: 1px solid black; }
+div.note {
+   position: relative;
+   display: block;
+   padding: 5pt;
+   margin: 5pt; 
+   white-space: -moz-pre-wrap; /* Mozilla */
+   white-space: -pre-wrap;     /* Opera 4 - 6 */
+   white-space: -o-pre-wrap;   /* Opera 7 */
+   white-space: pre-wrap;      /* CSS3 */
+   word-wrap: break-word;      /* IE 5.5+ */ }
+</style></head><body><div class="note" id="TheMETAMOCMethod"><a name="the metamoc method"></a><h1>The METAMOC Method</h1>
+<b><span style="font-size:large">About</span></b>
+
+The METAMOC method was developed in the spring semester of 2009 as part of the master's thesis <i>Modular Execution Time Analysis using Model Checking (METAMOC)</i> by Andreas Engelbredt Dalsgaard, Mads Christian Olesen and Martin Toft. This web page makes the source code of our implemention for the ARM920T processor available.
+
+This page is a backup of <a style="color:#3465A4" href="https://metamoc.dk/">metamoc.dk</a>.
+
+<b><span style="font-size:large">Installing our prototype implementation of METAMOC</span></b>
+
+Requirements on Ubuntu 9.04:
+scons build-essential python-pygraphviz python-celementtree swig python2.5-dev<br>
+Furthermore, <a style="color:#3465A4" href="http://uppaal.com/">UPPAAL</a> must be installed (at least the command line tools <span style="font-family:monospace">uppaal</span> and <span style="font-family:monospace">verifyta</span> must be in the path). At the moment, the new query type ("sup clockname"), which the prototype implementation utilises to avoid a binary search, is only available in the development version of UPPAAL.
+
+Download <a style="color:#3465A4" href="metamoc-r1230.tar.gz">metamoc-r1230.tar.gz</a>
+Extract metamoc-r1230.tar.gz
+In a terminal in the "external" folder run:
+<span style="font-family:monospace">make setup</span>
+
+Download and install <a style="color:#3465A4" href="openmoko-arm-toolchain_1-2_all.deb">openmoko-arm-toolchain_1-2_all.deb</a>
+
+Start <span style="font-family:monospace">METAMOC</span> GUI from a terminal in the "code" folder, by running:
+<span style="font-family:monospace">. prepare.sh &amp;&amp; ./metamocGUI.py</span>
+
+
+<b><span style="font-size:large">Other downloads</span></b>
+
+WCET'2010 paper <a href="metamoc-wcet2010.pdf">METAMOC: Modular Execution Time Analysis Using Model Checking</a>,
+presented (<a href="metamoc-wcet2010-slides.pdf">WCET 2010 Slides</a>) at the 10th International Workshop on Worst-Case Execution Time Analysis (WCET 2010) in Brüssels, Belgium, on July 7-9, 2010.
+
+The extended abstract <a href="dsssv09.pdf">WCET Analysis of ARM Processors using Real-Time Model Checking</a>. The abstract was accepted for the <a href="http://www.embedded.rwth-aachen.de/ssv09/doku.php?id=doctoral">SSV 2009 Doctoral Symposium</a> which was held during the 4th International Workshop on Systems Software Verification (SSV 09) in Aachen, Germany, on June 22-24, 2009.<br>
+The master's thesis <a href="dat6.pdf">Modular Execution Time Analysis using Model Checking (METAMOC)</a>.<br>
+The <a href="dsssv09-slides.pdf">slides</a> used at the <a href="http://www.embedded.rwth-aachen.de/ssv09/doku.php?id=doctoral">SSV 2009 Doctoral Symposium</a>, which was held during 4th International Workshop on Systems Software Verification (SSV 09) in Aachen, Germany, on June 22-24, 2009.<br>
+The <a href="dansas09-slides.pdf">slides</a> used at the <a href="http://dansas.sdu.dk/">Danish Static Analysis Symposium (DANSAS'09)</a>, which was held at the Odense campus of the University of Southern Denmark on August 20, 2009.<br>
+The <a href="danes2010.pdf">slides</a> used at the <a href="http://danes.aau.dk/">DaNES</a> workshop at Limfjordshotellet, Aalborg, Denmark, on May 21, 2010.<br>
+<a href="metamoc-models-wcet2010-01-06-2010.tar.gz">UPPAAL models</a> for the WCET benchmark programs from Mälardalen Real-Time Research Centre. <a href="benchmarks.ods">Benchmark results</a> as an OpenOffice spreadsheet.
+
+<b><span style="font-size:large">Contact information</span></b>
+
+Andreas Engelbredt Dalsgaard <a style="color:#3465A4" href="mailto:andrease@cs.aau.dk">andrease@cs.aau.dk</a>
+Mads Christian Olesen <a style="color:#3465A4" href="mailto:mchro@cs.aau.dk">mchro@cs.aau.dk</a>
+Martin Toft <a style="color:#3465A4" href="mailto:mt@cs.aau.dk">mt@cs.aau.dk</a></div>
+</body></html>
